@@ -4,7 +4,7 @@ const PUBLIC_API_HOSTNAME = 'testjob.checkport.ru';
 
 // const API_BASE = `${PROTOCOL}://${PUBLIC_API_HOSTNAME}/`;
 
-const API_BASE = 'https://checkport-test-three.vercel.app/api/proxy/'
+const API_BASE = 'https://cors-anywhere-n7fn.onrender.com/http://testjob.checkport.ru/'
 
 const GET_FILIALS = '/filial/';
 

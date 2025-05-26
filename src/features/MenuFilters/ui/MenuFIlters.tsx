@@ -30,7 +30,7 @@ export const MenuFilters: FC = (): ReactElement => {
     page: 1,
   });
 
-  const debounceValue = useDebounce(inputValues, 500);
+  const debounceValue = useDebounce(inputValues, 400);
 
   const handleChange = useCallback(
     (field: keyof FilialMenuFilters) =>
