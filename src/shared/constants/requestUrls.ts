@@ -2,7 +2,7 @@ const PROTOCOL = 'https';
 
 const PUBLIC_API_HOSTNAME = 'testjob.checkport.ru';
 
-const API_BASE = `http://localhost:8080/testjob.checkport.ru/`;
+const API_BASE = `${PROTOCOL}://${PUBLIC_API_HOSTNAME}/`;
 
 const GET_FILIALS = '/filial/';
 
