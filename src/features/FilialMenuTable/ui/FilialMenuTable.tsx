@@ -16,7 +16,7 @@ const TableRow: FC<IFilialMenu> = ({
   filial,
   tt,
   active,
-  exports,
+  ...rest
 }): ReactElement => {
   return (
     <Box className={classes.tableRowWrapper}>
@@ -33,7 +33,7 @@ const TableRow: FC<IFilialMenu> = ({
           <Text className={classes.secondary}>Торговая точка:</Text>
           <Text className={classes.text}>{tt.name}</Text>
         </Box>
-        <Box className={classes.adaptiveCell}>
+        <Box className={classes.adaptiveCell} style={{ width: 118 }}>
           <Text className={classes.secondary}>Активно</Text>
           <Text className={classes.text}>
             {active ? "Активно" : "Не активно"}
@@ -41,11 +41,11 @@ const TableRow: FC<IFilialMenu> = ({
         </Box>
         <Box className={classes.adaptiveCell}>
           <Text className={classes.secondary}>Экспорт</Text>
-          <Box>
-            {exports?.length ? (
-              exports?.map((el) => (
-                <Text className={classes.text} key={el}>
-                  {el}
+          <Box className={classes.export}>
+            {rest.export?.length ? (
+              rest.export?.map((el, index) => (
+                <Text key={el}>
+                  {index === rest.export.length - 1 ? el : `${el},`}
                 </Text>
               ))
             ) : (

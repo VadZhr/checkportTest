@@ -16,7 +16,7 @@ interface IFilialMenu extends IBaseEntity {
   filial: IBaseEntity;
   tt: IBaseEntity;
   active: boolean;
-  exports: string[];
+  export: string[];
 }
 
 interface IFilialMenuResponse {
