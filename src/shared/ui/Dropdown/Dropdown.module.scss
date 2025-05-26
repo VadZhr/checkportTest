@@ -1,0 +1,68 @@
+@import "../../styles/variables.module.scss";
+
+.customSelect {
+  display: flex;
+  flex-direction: column;
+
+  .labelText {
+    color: $secondary;
+  }
+}
+
+.selectTrigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $secondary;
+  border-radius: 5px;
+
+  .selectTriggerText {
+    margin-left: 10px;
+    font-size: 16px;
+    color: $primary;
+  }
+}
+
+.selectTrigger {
+  color: $secondary;
+}
+
+.selectIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 30px;
+  background-color: #072659;
+  color: white;
+  font-size: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.selectContent {
+  background-color: #fff;
+  border: 1px solid $secondary;
+  border-radius: 6px;
+  width: var(--radix-select-trigger-width);
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .selectedViewport {
+    padding: 8px, 12px;
+  }
+}
+
+.selectItem {
+  color: $primary;
+  padding: 8px;
+
+  &[data-highlighted] {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+span {
+  display: inline-block;
+}

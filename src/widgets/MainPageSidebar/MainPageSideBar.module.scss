@@ -1,0 +1,105 @@
+@import "../../shared/styles/variables.module.scss";
+
+.wrapper {
+  .staticContent {
+    display: flex;
+    flex-direction: column;
+    width: 257px;
+    height: 116px;
+    background-color: white;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 232px;
+      height: 44px;
+
+      .circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        background-color: $primary;
+        border-radius: 50%;
+
+        .circleText {
+          color: white;
+        }
+      }
+
+      .companyName {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 175px;
+      }
+    }
+
+    .infoAccounting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 227px;
+
+      .accounting {
+        width: 175px;
+      }
+
+      img {
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    .primary {
+      color: $primary;
+      height: 22px;
+    }
+
+    .secondary {
+      color: $secondary;
+      height: 22px;
+    }
+  }
+
+  .horizontalLine {
+    border-bottom: 1px solid $primary;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+
+  .navigation {
+    display: flex;
+    height: 30px;
+    width: 250px;
+    flex-direction: column;
+    gap: 10px;
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      font-size: 16px;
+      padding-left: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      height: 30px;
+    }
+
+    .isActive {
+      box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 257px;
+}
